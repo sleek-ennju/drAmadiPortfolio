@@ -15,13 +15,14 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
-            Dr. Adolphe<br />O. Amadi
+            Dr. Adolphe O. Amadi
           </h1>
           <p className="text-lg md:text-xl font-medium text-gray-300 mb-2">
-            HR Administrator & Development Consultant
+            Management Consultant & Development Facilitator
           </p>
           <p className="text-sm md:text-base text-gray-400 mb-8">
-            Former Director of Administration and Finance and Permanent Secretary
+            Empowering organizations and communities through 
+            strategic consulting and sustainable development initiatives.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a href="#contact" className="bg-blue-600 hover:bg-blue-700  px-6 py-3 rounded-full text-white font-semibold text-sm shadow-md transition duration-300">

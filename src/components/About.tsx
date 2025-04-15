@@ -12,12 +12,12 @@ const philosophyCards = [
   {
     icon: <FaLightbulb size={24} className="text-blue-600" />,
     title: "Innovation",
-    desc: "Creating novel solutions to existing challenges.",
+    desc: "Creating novel solutions to complex challenges",
   },
   {
     icon: <FaGlobe size={24} className="text-blue-600" />,
     title: "Global Perspective",
-    desc: "Leveraging international knowledge to local impact.",
+    desc: "Leveraging international insights for local impact",
   },
   {
     icon: <FaChartLine size={24} className="text-blue-600" />,
@@ -29,28 +29,28 @@ const philosophyCards = [
 const timeline = [
   {
     year: "1981",
-    title: "Founding of Doll Madi Consulting",
-    desc: "Established a franchise in capacity building, management consulting, and foreign trade facilitation in partnership with The Performance Group Inc., Dallas, USA.",
+    title: "Founding of Dolf Madi Consulting",
+    desc: "Established as a franchise in capacity building, management consulting, and foreign trade facilitation in partnership with The Performance Group, Inc., Dallas, U.S.A.",
   },
   {
     year: "1980s–1990s",
     title: "International Expansion",
-    desc: "Expanded operations through Doll Madi International to bridge international best practices and local development needs.",
+    desc: "Expanded operations through Dolf Madi International Ltd. in Nigeria, creating a bridge between international business practices and local development needs.",
   },
   {
     year: "2000s",
     title: "Co-founding of SEDFA",
-    desc: "Founded the Self-help Development Facilitators (SEDFA) alongside Dr. Madi, focusing on non-governmental development initiatives.",
+    desc: "Founded Self-Help Development Facilitators (SEDFA) alongside Dr. (Mrs.) Rose Amadi, focusing on non-governmental development initiatives.",
   },
   {
     year: "2011",
     title: "UN Recognition",
-    desc: "SEDFA was accorded the Special Consultative Status by the United Nations (ECOSOC).",
+    desc: "SEDFA was accorded the Special Consultative Status by the United Nations (ECOSOC), acknowledging its impact on global development.",
   },
   {
     year: "Present",
     title: "Continued Leadership",
-    desc: "Leads initiatives focused on capacity building, sustainable development, and international collaboration.",
+    desc: "Continues to lead initiatives focused on capacity building, sustainable development, and international collaboration.",
   },
 ]
 
@@ -95,7 +95,7 @@ const About = () => {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {philosophyCards.map((item, index) => (
-                <div key={index} className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm">
+                <div key={index} className="bg-white border border-gray-200 rounded-lg p-4 shadow-2xs">
                   <div className="mb-2">{item.icon}</div>
                   <h4 className="font-semibold text-lg">{item.title}</h4>
                   <p className="text-sm text-gray-600">{item.desc}</p>
@@ -109,7 +109,7 @@ const About = () => {
         <div className="md:w-1/2 space-y-6">
           <img src={about2} alt="About 2" className="rounded-md" />
 
-          <div className="bg-white border border-gray-200 rounded-lg shadow p-6">
+          <div className="bg-white border border-gray-200 rounded-lg shadow-2xs p-6">
             <h3 className="text-xl font-bold mb-4">Professional Journey</h3>
             <div className="relative border-l-2 border-blue-500 pl-8 space-y-8">
                 {timeline.map((item, idx) => (
