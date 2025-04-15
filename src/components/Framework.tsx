@@ -5,7 +5,7 @@ import { ppcp } from '../assets';
 
 const Framework = () => {
   return (
-    <section className="bg-gray-50 py-20 px-6 md:px-20 text-gray-800">
+    <section className="bg-gray-50 py-20 px-6 md:px-20 text-gray-800" id='framework'>
       <div className="max-w-6xl mx-auto text-center">
         <motion.h2
           className="text-3xl md:text-4xl font-bold mb-4"
@@ -29,7 +29,7 @@ const Framework = () => {
 
         {/* Framework Image */}
         <motion.div
-          className="rounded-lg shadow-2xs overflow-hidden max-w-4xl mx-auto"
+          className="rounded-lg  overflow-hidden max-w-4xl mx-auto"
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}
@@ -37,7 +37,7 @@ const Framework = () => {
           <img
             src={ppcp}
             alt="P-P-C-P Framework Diagram"
-            className="w-full h-auto object-contain"
+            className="w-full h-auto object-contain mix-blend-darken"
           />
         </motion.div>
       </div>

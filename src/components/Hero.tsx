@@ -3,97 +3,95 @@ import { motion } from "motion/react";
 import { drAdolphe_potrait } from "../assets";
 
 const Hero = () => {
-    return (
-        <section className="relative min-h-screen bg-gradient-to-br from-[#0a1222] to-[#101d39] text-white flex items-center px-6 md:px-20 py-16">
-      <div className="flex flex-col-reverse md:flex-row items-center justify-between w-full max-w-7xl mx-auto gap-10">
-        
-        {/* Left Text Content */}
-        <motion.div
-          className="text-center md:text-left max-w-xl"
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
-            Dr. Adolphe O. Amadi
-          </h1>
-          <p className="text-lg md:text-xl font-medium text-gray-300 mb-2">
-            Management Consultant & Development Facilitator
-          </p>
-          <p className="text-base md:text-lg text-gray-400 mb-8">
-            Empowering organizations and communities through 
-            strategic consulting and sustainable development initiatives.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-            <a href="#contact" className="bg-blue-600 hover:bg-blue-700  px-6 py-3 rounded-full text-white font-semibold text-sm shadow-md transition duration-300">
-              Get in Touch
-            </a>
-            <a href="/cv.pdf" className="border border-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-white hover:text-[#0a1222] transition duration-300">
-              Download CV
-            </a>
-          </div>
-        </motion.div>
+  return (
+      <section className="relative bg-[#0b1120] text-white overflow-hidden px-6 md:px-20 py-24">
+          {/* 👇 Decorative Blobs */}
+          <div className="absolute -top-20 -left-32 w-[400px] h-[400px] bg-blue-600/20 rounded-full blur-[120px] z-0"></div>
 
-        {/* Right Image */}
-        <motion.div
-          className="w-full max-w-sm md:max-w-md"
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <img
-            src={drAdolphe_potrait}
-            alt="Dr Amadi"
-            className="w-full h-auto object-cover rounded-xl shadow-2xs"
-          />
-        </motion.div>
-      </div>
-    </section>
-        // <section className="bg-[#0D1B2A] text-white min-h-screen flex items-center justify-center px-6 md:px-20">
-        //   <div className="text-center max-w-3xl">
-        //     <motion.img
-        //       src={drAdolphe_potrait}
-        //       alt="Dr Amadi"
-        //       className="w-40 h-40 md:w-48 md:h-48 rounded-full mx-auto object-cover shadow-xl border-4 border-white mb-6"
-        //       initial={{ opacity: 0, y: -40 }}
-        //       animate={{ opacity: 1, y: 0 }}
-        //       transition={{ duration: 0.8 }}
-        //     />
-    
-        //     <motion.h1
-        //       className="text-3xl md:text-5xl font-bold leading-tight mb-4"
-        //       initial={{ opacity: 0 }}
-        //       animate={{ opacity: 1 }}
-        //       transition={{ delay: 0.3, duration: 0.6 }}
-        //     >
-        //       Dr. Adolphe O. Amadi
-        //     </motion.h1>
-    
-        //     <motion.p
-        //       className="text-lg md:text-xl text-gray-300 mb-8"
-        //       initial={{ opacity: 0 }}
-        //       animate={{ opacity: 1 }}
-        //       transition={{ delay: 0.5, duration: 0.6 }}
-        //     >
-        //       Management Consultant & Development Facilitator
-        //     </motion.p>
-    
-        //     <motion.div
-        //       className="flex flex-col sm:flex-row gap-4 justify-center"
-        //       initial={{ opacity: 0 }}
-        //       animate={{ opacity: 1 }}
-        //       transition={{ delay: 0.7, duration: 0.6 }}
-        //     >
-        //       <button className="bg-white text-[#0D1B2A] px-6 py-2 rounded-full font-semibold shadow hover:bg-gray-200 transition">
-        //         Call Now
-        //       </button>
-        //       <button className="border border-white px-6 py-2 rounded-full font-semibold hover:bg-white hover:text-[#0D1B2A] transition">
-        //         Book a Meeting
-        //       </button>
-        //     </motion.div>
-        //   </div>
-        // </section>
-      )
+          <div className="relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
+            {/* Text Section */}
+            <div className="max-w-xl text-center md:text-left">
+              <motion.h1
+                className="text-4xl md:text-5xl font-extrabold leading-tight"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+              >
+                Dr. Adolphe O. Amadi
+              </motion.h1>
+              <motion.p
+                className="mt-4 text-lg md:text-xl font-medium text-blue-100"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.3, duration: 0.5 }}
+              >
+                Management Consultant & Development Facilitator
+              </motion.p>
+              <motion.p
+                className="mt-4 text-base md:text-lg text-gray-300"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.4, duration: 0.5 }}
+              >
+                Empowering organizations and communities through strategic consulting and sustainable development initiatives.
+              </motion.p>
+
+              {/* Buttons */}
+              <motion.div
+                className="mt-8 flex gap-4 justify-center md:justify-start flex-wrap"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.5, duration: 0.5 }}
+              >
+                <a
+                  href="#contact"
+                  className="bg-blue-600 hover:bg-blue-700 transition-all duration-300 text-white font-semibold px-6 py-3 rounded-full"
+                >
+                  Get in Touch
+                </a>
+                <a
+                  href="/cv.pdf"
+                  target="_blank"
+                  className="border border-white text-white hover:bg-white hover:text-blue-700 transition-all duration-300 font-semibold px-6 py-3 rounded-full"
+                >
+                  Download CV
+                </a>
+              </motion.div>
+            </div>
+
+            {/* Image */}
+            <motion.div
+              className="w-full md:w-[400px] flex-shrink-0 relative"
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.6, duration: 0.5 }}
+            >
+              {/* Portrait */}
+              <img
+                src={drAdolphe_potrait}
+                alt="Dr. Adolphe Amadi"
+                className="w-full object-cover drop-shadow-2xl relative z-10"
+              />
+
+              {/* Subtle bottom gradient fade */}
+              <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-[#0b1120] via-[#0b1120]/80 to-transparent z-20 pointer-events-none"></div>
+            </motion.div>
+
+            {/* <motion.div
+              className="w-full md:w-[400px] flex-shrink-0"
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.6, duration: 0.5 }}
+            >
+              <img
+                src={drAdolphe_potrait}
+                alt="Dr. Adolphe Amadi"
+                className="w-full object-cover drop-shadow-xl"
+              />
+            </motion.div> */}
+          </div>
+      </section>
+    )
 }
 
 export default Hero

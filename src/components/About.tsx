@@ -56,7 +56,7 @@ const timeline = [
 
 const About = () => {
   return (
-    <section className="bg-white py-20 px-6 md:px-20 text-gray-800">
+    <section className="bg-white py-20 px-6 md:px-20 text-gray-800" id='about'>
       {/* Header */}
       <div className="text-center mb-16">
         <motion.h2
@@ -110,7 +110,7 @@ const About = () => {
           <img src={about2} alt="About 2" className="rounded-md" />
 
           <div className="bg-white border border-gray-200 rounded-lg shadow-2xs p-6">
-            <h3 className="text-xl font-bold mb-4">Professional Journey</h3>
+            <h3 className="text-xl md:text-2xl font-bold mb-4">Professional Journey</h3>
             <div className="relative border-l-2 border-blue-500 pl-8 space-y-8">
                 {timeline.map((item, idx) => (
                     <div key={idx} className="relative">

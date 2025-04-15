@@ -10,6 +10,12 @@ import career_4 from "../../public/career_4.png"
 import career_5 from "../../public/career_5.png"
 import career_6 from "../../public/career_6.png"
 import career_7 from "../../public/career_7.png"
+import recognition from "../../public/recognition.png"
+import silverMedal from "../../public/silverMedal.png"
+import testimonial_1 from "../../public/testimonial_1.png"
+import testimonial_2 from "../../public/testimonial_2.png"
+import testimonial_3 from "../../public/testimonial_3.png"
+import testimonial_4 from "../../public/testimonial_4.png"
 
 
 
@@ -19,5 +25,8 @@ export {
     about1, about2,
     ppcp,
     timeline,
-    career_1,career_2,career_3,career_4,career_5,career_6,career_7
+    career_1,career_2,career_3,career_4,career_5,career_6,career_7,
+    recognition,
+    silverMedal,
+    testimonial_1,testimonial_2,testimonial_3,testimonial_4
 }
