@@ -68,7 +68,7 @@ const About = () => {
           About Dr. Amadi
         </motion.h2>
         <div className="w-16 h-1 bg-blue-600 mx-auto mb-4 rounded" />
-        <p className="max-w-3xl mx-auto text-gray-600">
+        <p className="text-base md:text-lg max-w-3xl mx-auto text-gray-600">
           A distinguished consultant with over four decades of experience in capacity building, management consulting, and international trade facilitation.
         </p>
       </div>
@@ -80,14 +80,14 @@ const About = () => {
           <img src={about1} alt="About 1" className="rounded-md" />
 
           <div>
-            <h3 className="text-2xl font-bold mb-2">Professional Philosophy</h3>
-            <p className="text-gray-600 mb-6">
+            <h3 className="text-2xl md:text-3xl font-bold mb-2">Professional Philosophy</h3>
+            <p className="text-base md:text-lg text-gray-600 mb-6">
                 Dr. Adolphe Amadi, also known professionally as Dolf Madi, 
                 has dedicated his career to empowering organizations and 
                 communities through innovative consulting approaches and 
                 sustainable development initiatives.
             </p>
-            <p className="text-gray-600 mb-6">
+            <p className="text-base md:text-lg text-gray-600 mb-6">
                 His work bridges international business practices with local 
                 development needs, creating frameworks that promote 
                 sustainable growth and collaboration across sectors.
@@ -97,8 +97,8 @@ const About = () => {
               {philosophyCards.map((item, index) => (
                 <div key={index} className="bg-white border border-gray-200 rounded-lg p-4 shadow-2xs">
                   <div className="mb-2">{item.icon}</div>
-                  <h4 className="font-semibold text-lg">{item.title}</h4>
-                  <p className="text-sm text-gray-600">{item.desc}</p>
+                  <h4 className="font-semibold text-lg md:text-xl">{item.title}</h4>
+                  <p className="text-base text-gray-600">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -119,9 +119,9 @@ const About = () => {
 
                     {/* Text Block */}
                     <div className="space-y-1">
-                        <p className="text-blue-600 font-semibold">{item.year}</p>
-                        <h4 className="font-bold text-gray-800">{item.title}</h4>
-                        <p className="text-sm text-gray-600">{item.desc}</p>
+                        <p className="text-base text-blue-600 font-semibold">{item.year}</p>
+                        <h4 className="text-base md:text-lg font-bold text-gray-800">{item.title}</h4>
+                        <p className="text-base text-gray-600">{item.desc}</p>
                     </div>
                     </div>
                 ))}

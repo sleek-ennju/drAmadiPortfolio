@@ -20,7 +20,7 @@ const Hero = () => {
           <p className="text-lg md:text-xl font-medium text-gray-300 mb-2">
             Management Consultant & Development Facilitator
           </p>
-          <p className="text-sm md:text-base text-gray-400 mb-8">
+          <p className="text-base md:text-lg text-gray-400 mb-8">
             Empowering organizations and communities through 
             strategic consulting and sustainable development initiatives.
           </p>
