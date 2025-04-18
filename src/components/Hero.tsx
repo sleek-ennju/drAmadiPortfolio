@@ -50,11 +50,10 @@ const Hero = () => {
                   Get in Touch
                 </a>
                 <a
-                  href="/cv.pdf"
-                  target="_blank"
+                  href="#services"
                   className="border border-white text-white hover:bg-white hover:text-blue-700 transition-all duration-300 font-semibold px-6 py-3 rounded-full"
                 >
-                  Download CV
+                  Services
                 </a>
               </motion.div>
             </div>
@@ -76,19 +75,7 @@ const Hero = () => {
               {/* Subtle bottom gradient fade */}
               <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-[#0b1120] via-[#0b1120]/80 to-transparent z-20 pointer-events-none"></div>
             </motion.div>
-
-            {/* <motion.div
-              className="w-full md:w-[400px] flex-shrink-0"
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.6, duration: 0.5 }}
-            >
-              <img
-                src={drAdolphe_potrait}
-                alt="Dr. Adolphe Amadi"
-                className="w-full object-cover drop-shadow-xl"
-              />
-            </motion.div> */}
+            
           </div>
       </section>
     )
