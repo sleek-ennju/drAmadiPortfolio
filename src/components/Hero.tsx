@@ -53,7 +53,7 @@ const Hero = () => {
                   href="#services"
                   className="border border-white text-white hover:bg-white hover:text-blue-700 transition-all duration-300 font-semibold px-6 py-3 rounded-full"
                 >
-                  Services
+                  Explore My Services
                 </a>
               </motion.div>
             </div>
