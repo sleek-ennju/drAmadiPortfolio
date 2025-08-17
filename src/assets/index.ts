@@ -1,4 +1,11 @@
 // import drAdolphe_potrait  from "./drAdolphe_potrait.png";
+import sedfa_logo from "./SEFDA_logo.png";
+import algon_logo from "./algon_logo.png";
+import bp_logo from "./bp_logo.png";
+import cid_logo from "./cid_logo.png";
+import osiwa_logo from "./osiwa_logo.png";
+import lg_logo from "./lg_logo.png";
+import eco_logo from "./eco_logo.png";
 import drAdolphe_potrait  from "./adolphe-potrait.png";
 import about1  from "./about1.png";
 import about2  from "./about2.png";
@@ -22,6 +29,9 @@ import testimonial_4 from "./testimonial_4.png"
 
 
 export {
+    sedfa_logo,
+    algon_logo,
+    lg_logo, eco_logo,bp_logo,cid_logo,osiwa_logo,
     drAdolphe_potrait,
     about1, about2,
     ppcp,
